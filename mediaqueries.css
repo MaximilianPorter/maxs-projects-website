@@ -1,0 +1,23 @@
+@media (width < 800px) {
+  .page-content {
+    margin-left: 0;
+    margin-top: 5rem;
+    width: 100%;
+  }
+}
+
+@media (width >= 800px) {
+  .page-content {
+    transform: translateX(0);
+  }
+  .mobile-header {
+    display: none;
+  }
+
+  .side-info--collapsed-left {
+    transform: translateX(0);
+  }
+  .side-info--collapsed-right {
+    transform: translateX(0);
+  }
+}

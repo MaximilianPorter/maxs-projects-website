@@ -1,0 +1,103 @@
+[
+  {
+    "name": "Corner Kingdoms",
+    "image": "https://campzone.nl/wp-content/uploads/2017/03/discord-logo.jpg",
+    "channels": [
+      {
+        "name": "general",
+        "content": "<h1>General</h1><p>General chat for the Corner Kingdoms Discord server.</p>",
+        "source": ""
+      },
+      {
+        "name": "docs",
+        "content": "",
+        "source": "/example.html"
+      },
+      {
+        "name": "ideas",
+        "content": "<h1>Ideas</h1><p>Ideas for the Corner Kingdoms Discord server.</p>",
+        "source": ""
+      }
+    ]
+  },
+  {
+    "name": "JohnnyBoi Showmatches",
+    "image": "https://campzone.nl/wp-content/uploads/2017/03/discord-logo.jpg",
+    "channels": [
+      {
+        "name": "general",
+        "content": "<h1>General</h1><p>General chat for the JohnnyBoi Showmatches Discord server.</p>",
+        "source": ""
+      },
+      {
+        "name": "docs",
+        "content": "<h1>Docs</h1><p>Documentation for the JohnnyBoi Showmatches Discord server.</p>",
+        "source": ""
+      }
+    ]
+  },
+  {
+    "name": "f",
+    "image": "https://campzone.nl/wp-content/uploads/2017/03/discord-logo.jpg",
+    "channels": [
+      {
+        "name": "general",
+        "content": "<h1>General</h1><p>General chat for the JohnnyBoi Showmatches Discord server.</p>",
+        "source": ""
+      },
+      {
+        "name": "docs",
+        "content": "<h1>Docs</h1><p>Documentation for the JohnnyBoi Showmatches Discord server.</p>",
+        "source": ""
+      }
+    ]
+  },
+  {
+    "name": "JohnnyBoi Showmatches",
+    "image": "https://campzone.nl/wp-content/uploads/2017/03/discord-logo.jpg",
+    "channels": [
+      {
+        "name": "general",
+        "content": "<h1>General</h1><p>General chat for the JohnnyBoi Showmatches Discord server.</p>",
+        "source": ""
+      },
+      {
+        "name": "docs",
+        "content": "<h1>Docs</h1><p>Documentation for the JohnnyBoi Showmatches Discord server.</p>",
+        "source": ""
+      }
+    ]
+  },
+  {
+    "name": "f",
+    "image": "https://campzone.nl/wp-content/uploads/2017/03/discord-logo.jpg",
+    "channels": [
+      {
+        "name": "general",
+        "content": "<h1>General</h1><p>General chat for the JohnnyBoi Showmatches Discord server.</p>",
+        "source": ""
+      },
+      {
+        "name": "docs",
+        "content": "<h1>Docs</h1><p>Documentation for the JohnnyBoi Showmatches Discord server.</p>",
+        "source": ""
+      }
+    ]
+  },
+  {
+    "name": "JohnnyBoi Showmatches",
+    "image": "https://campzone.nl/wp-content/uploads/2017/03/discord-logo.jpg",
+    "channels": [
+      {
+        "name": "general",
+        "content": "<h1>General</h1><p>General chat for the JohnnyBoi Showmatches Discord server.</p>",
+        "source": ""
+      },
+      {
+        "name": "docs",
+        "content": "<h1>Docs</h1><p>Documentation for the JohnnyBoi Showmatches Discord server.</p>",
+        "source": ""
+      }
+    ]
+  }
+]
