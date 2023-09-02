@@ -1,3 +1,41 @@
+:root {
+  --aside-width: 31rem;
+  --mobile-header-height: 5rem;
+
+  --aside-color: #212529;
+  --page-sidebar-color: #343a40;
+  --page-sidebar-color--hover: #495057;
+  --page-sidebar-font-color: #f1f3f5;
+  --popup-project-name-color: #f1f3f5;
+  /* --main-body-color: #dee2e6; */
+  --main-body-color: #212529;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Source Code Pro", monospace;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--main-body-color);
+  color: var(--page-sidebar-font-color);
+}
+
+code {
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.no-scroll {
+  overflow: hidden !important;
+}
+
+/* ---------- LOADING RING ---------- */
 .lds-ring {
   display: inline-block;
   position: relative;
@@ -37,12 +75,4 @@
   100% {
     transform: rotate(360deg);
   }
-}
-
-.hidden {
-  display: none !important;
-}
-
-.no-scroll {
-  overflow: hidden !important;
 }

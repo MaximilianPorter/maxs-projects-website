@@ -1,6 +1,8 @@
 // import projects.json
 // import projects from "./projects.json" assert { type: "json" };
 // import * as projects from "./projects.json";
+import showdown from "https://cdn.skypack.dev/showdown";
+const converter = new showdown.Converter();
 
 const projectItemArea = document.querySelector(".project-items");
 const pageChannelsArea = document.querySelector(".page-channels");
@@ -71,6 +73,13 @@ async function PopulateProjects() {
     const projectName = project.name;
     const projectImageSrc = project.image;
 
+    // if there's a source and channels > 0, this is wrong
+    if (project.source && project.channels.length > 0) {
+      console.error(
+        `Project ${projectName} has both a source and channels. Please remove one.`
+      );
+    }
+
     const projectItemMarkup = `
   <div class="project-item" data-project-name="${projectName}" data-id="${i}">
     <div class="project-image-container">
@@ -139,7 +148,7 @@ async function PopulateChannels_SinglePage(projectId) {
 
   const content = await SetPageContentFromSource(projectSourcePage);
   const singlePageLinks = FindLinksInContent(content);
-  singlePageLinks.forEach((link) => {
+  singlePageLinks?.forEach((link) => {
     const div = AddChannelDiv(
       projectId,
       {
@@ -191,6 +200,7 @@ function FindLinksInContent(content) {
 }
 
 async function ClickOnChannel(pageChannel) {
+  if (!pageChannel) return;
   // remove selected class from all channels
   const allPageChannels = document.querySelectorAll(".page-channel");
   allPageChannels.forEach((channel) => {
@@ -240,14 +250,38 @@ async function ClickOnChannel(pageChannel) {
 async function SetPageContentFromSource(source) {
   pageLoadingSpinner.classList.remove("hidden"); // show loading spinner
 
-  pageContentFrame.src = source;
-  const data = await new Promise((resolve) => {
-    pageContentFrame.addEventListener("load", () => {
-      const data = pageContentFrame.contentWindow.document.body.innerHTML;
-      resolve(data);
-      pageLoadingSpinner.classList.add("hidden"); // hide loading spinner
+  const srcExtension = source.split(".").pop().toLowerCase();
+  console.log(srcExtension);
+
+  let data = "";
+
+  if (srcExtension === "html") {
+    // For HTML sources, set the iframe src directly
+    pageContentFrame.src = source;
+    data = await new Promise((resolve) => {
+      pageContentFrame.addEventListener("load", () => {
+        const data = pageContentFrame.contentWindow.document.body.innerHTML;
+        resolve(data);
+        pageLoadingSpinner.classList.add("hidden"); // hide loading spinner
+      });
     });
-  });
+  } else if (srcExtension === "md") {
+    // // For Markdown sources, load the content dynamically into the iframe
+    // pageContentFrame.src = "about:blank"; // Clear the iframe
+    // const mdContent = await fetch(source).then((response) => response.text());
+    // const htmlContent = converter.makeHtml(mdContent);
+    // const iframeDoc =
+    //   pageContentFrame.contentDocument ||
+    //   pageContentFrame.contentWindow.document;
+    // iframeDoc.open();
+    // iframeDoc.write(htmlContent);
+    // iframeDoc.close();
+    // data = htmlContent;
+    // pageLoadingSpinner.classList.add("hidden"); // hide loading spinner
+  } else {
+    console.error("Unsupported file type.");
+  }
+
   return data;
 }
 

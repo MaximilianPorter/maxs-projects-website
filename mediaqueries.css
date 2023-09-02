@@ -4,6 +4,7 @@
     margin-top: 5rem;
     width: 100%;
     height: calc(100% - var(--mobile-header-height));
+    padding: 0 1rem;
   }
 }
 

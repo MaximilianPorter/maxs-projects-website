@@ -1,15 +1,3 @@
-:root {
-  --aside-width: 31rem;
-  --mobile-header-height: 5rem;
-
-  --aside-color: #212529;
-  --page-sidebar-color: #343a40;
-  --page-sidebar-color--hover: #495057;
-  --page-sidebar-font-color: #f1f3f5;
-  --popup-project-name-color: #f1f3f5;
-  --main-body-color: #dee2e6;
-}
-
 *,
 *::after,
 *::before {
@@ -18,20 +6,11 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
-  font-family: "Source Code Pro", monospace;
-}
-
 body {
-  background-color: var(--main-body-color);
   height: 100dvh;
   overflow: hidden;
 
   font-size: 1.6rem;
-}
-
-.page-loading-spinner {
 }
 
 .page-content {

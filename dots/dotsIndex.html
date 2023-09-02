@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image To Dots</title>
+
+    <link rel="stylesheet" href="../general.css" />
+
+    <!-- CODE HIGHLIGHTING -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </head>
+  <body>
+    <div class="links hidden">
+      <a href="#start" class="hidden">title</a>
+    </div>
+    <h1 id="start">Some title</h1>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio aut natus
+      totam est? Illum tenetur ut id, ea libero quo qui! Minima totam fugiat
+      harum voluptate? Dolor fugit suscipit enim! Ex, ab architecto ipsa,
+      placeat quos dolores quia praesentium harum quod voluptatum dignissimos
+      dicta. Pariatur amet minus at ea dolor, sunt culpa itaque modi libero
+      voluptatum porro rem exercitationem tempora cum sit saepe illo? Nam
+      molestiae aperiam dicta eum iusto voluptatem. Dolores laboriosam commodi
+      consequuntur officia? Quas quaerat dolore ea, aliquam doloremque autem
+      blanditiis vel ex sit laboriosam enim atque a, doloribus quod. Maxime,
+      iusto amet dolor vitae molestiae suscipit?
+    </p>
+    <pre>
+      <code class="language-javascript">function FindLinksInContent(content) {
+  // only find href links that start with # and are followed by a word
+  const links = content.match(/(?<=href="#)\w+/g);
+
+  if (!links) {
+    console.error(`Project has no links. Please add links to the project.`);
+    return null;
+  }
+
+  // return links without duplicates
+  return [...new Set(links)];
+}</code>
+    </pre>
+  </body>
+</html>
