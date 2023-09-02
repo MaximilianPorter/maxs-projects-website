@@ -1,15 +1,40 @@
 [
   {
-    "name": "Corner Kingdoms",
+    "name": "JohnnyBoi Showmatches",
     "image": "https://campzone.nl/wp-content/uploads/2017/03/discord-logo.jpg",
+    "channelType": "multi-page",
     "channels": [
       {
         "name": "general",
-        "content": "<h1>General</h1><p>General chat for the Corner Kingdoms Discord server.</p>",
+        "content": "<h1>General</h1><p>General chat for the JohnnyBoi Showmatches Discord server.</p>",
         "source": ""
       },
       {
         "name": "docs",
+        "content": "<h1>Docs</h1><p>Documentation for the JohnnyBoi Showmatches Discord server.</p>",
+        "source": ""
+      }
+    ]
+  },
+  {
+    "name": "Corner Kingdoms",
+    "image": "https://campzone.nl/wp-content/uploads/2017/03/discord-logo.jpg",
+    "channelType": "single-page",
+    "source": "/README.md",
+    "channels": []
+  },
+  {
+    "name": "Whatever I want the server name to be",
+    "image": "https://campzone.nl/wp-content/uploads/2017/03/discord-logo.jpg",
+    "channelType": "multi-page",
+    "channels": [
+      {
+        "name": "cool stuff",
+        "content": "<h1>General</h1><p>General chat for the Corner Kingdoms Discord server.</p>",
+        "source": ""
+      },
+      {
+        "name": "person man",
         "content": "",
         "source": "/example.html"
       },
@@ -17,12 +42,35 @@
         "name": "ideas",
         "content": "<h1>Ideas</h1><p>Ideas for the Corner Kingdoms Discord server.</p>",
         "source": ""
+      },
+      {
+        "name": "testicular tortion",
+        "content": "<h1>Ideas</h1><p>Ideas for the Corner Kingdoms Discord server.</p>",
+        "source": ""
+      }
+    ]
+  },
+  {
+    "name": "f",
+    "image": "https://campzone.nl/wp-content/uploads/2017/03/discord-logo.jpg",
+    "channelType": "multi-page",
+    "channels": [
+      {
+        "name": "general",
+        "content": "<h1>General</h1><p>General chat for the JohnnyBoi Showmatches Discord server.</p>",
+        "source": ""
+      },
+      {
+        "name": "docs",
+        "content": "<h1>Docs</h1><p>Documentation for the JohnnyBoi Showmatches Discord server.</p>",
+        "source": ""
       }
     ]
   },
   {
     "name": "JohnnyBoi Showmatches",
     "image": "https://campzone.nl/wp-content/uploads/2017/03/discord-logo.jpg",
+    "channelType": "multi-page",
     "channels": [
       {
         "name": "general",
@@ -39,6 +87,7 @@
   {
     "name": "f",
     "image": "https://campzone.nl/wp-content/uploads/2017/03/discord-logo.jpg",
+    "channelType": "multi-page",
     "channels": [
       {
         "name": "general",
@@ -55,38 +104,7 @@
   {
     "name": "JohnnyBoi Showmatches",
     "image": "https://campzone.nl/wp-content/uploads/2017/03/discord-logo.jpg",
-    "channels": [
-      {
-        "name": "general",
-        "content": "<h1>General</h1><p>General chat for the JohnnyBoi Showmatches Discord server.</p>",
-        "source": ""
-      },
-      {
-        "name": "docs",
-        "content": "<h1>Docs</h1><p>Documentation for the JohnnyBoi Showmatches Discord server.</p>",
-        "source": ""
-      }
-    ]
-  },
-  {
-    "name": "f",
-    "image": "https://campzone.nl/wp-content/uploads/2017/03/discord-logo.jpg",
-    "channels": [
-      {
-        "name": "general",
-        "content": "<h1>General</h1><p>General chat for the JohnnyBoi Showmatches Discord server.</p>",
-        "source": ""
-      },
-      {
-        "name": "docs",
-        "content": "<h1>Docs</h1><p>Documentation for the JohnnyBoi Showmatches Discord server.</p>",
-        "source": ""
-      }
-    ]
-  },
-  {
-    "name": "JohnnyBoi Showmatches",
-    "image": "https://campzone.nl/wp-content/uploads/2017/03/discord-logo.jpg",
+    "channelType": "multi-page",
     "channels": [
       {
         "name": "general",

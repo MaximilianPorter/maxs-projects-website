@@ -1,5 +1,6 @@
 :root {
   --aside-width: 31rem;
+  --mobile-header-height: 5rem;
 
   --aside-color: #212529;
   --page-sidebar-color: #343a40;
@@ -24,18 +25,31 @@ html {
 
 body {
   background-color: var(--main-body-color);
+  height: 100dvh;
+  overflow: hidden;
 
   font-size: 1.6rem;
 }
 
+.page-loading-spinner {
+}
+
 .page-content {
   margin-left: var(--aside-width);
-  padding: 2rem;
+  padding-left: 2rem;
+  width: calc(100% - var(--aside-width));
   transform: translateX(var(--aside-width));
-  transition: all 0.2s ease-in-out;
+  height: 100%;
 
-  overflow-y: scroll;
-  overflow-x: hidden;
+  overflow: hidden;
+
+  transition: all 0.2s ease-in-out;
+}
+.page-content-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: var(--main-body-color);
 }
 
 .page-content::-webkit-scrollbar {
@@ -72,7 +86,7 @@ body {
   align-items: center;
   gap: 2rem;
   width: 100%;
-  height: 5rem;
+  height: var(--mobile-header-height);
   background-color: var(--aside-color);
   color: var(--page-sidebar-font-color);
 
@@ -258,7 +272,13 @@ body {
   padding: 0.6rem;
   width: 100%;
   height: 100%;
+
+  overflow-y: scroll;
 }
+.page-channels::-webkit-scrollbar {
+  display: none;
+}
+
 .page-channel {
   display: flex;
   justify-content: start;
@@ -269,6 +289,12 @@ body {
 
   border-radius: 5px;
   transition: all 0.1s;
+}
+.page-channel:link,
+.page-channel:active,
+.page-channel:visited {
+  text-decoration: none;
+  color: inherit;
 }
 .page-channel:hover {
   background-color: var(--page-sidebar-color--hover);
