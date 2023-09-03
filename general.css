@@ -2,13 +2,41 @@
   --aside-width: 31rem;
   --mobile-header-height: 5rem;
 
-  --aside-color: #212529;
+  /* --aside-color: #212529;
   --page-sidebar-color: #343a40;
   --page-sidebar-color--hover: #495057;
-  --page-sidebar-font-color: #f1f3f5;
+  --page-sidebar-font-color: #212529;
   --popup-project-name-color: #f1f3f5;
-  /* --main-body-color: #dee2e6; */
-  --main-body-color: #212529;
+  --main-body-color: #212529; */
+
+  --color_bg_primary: #11151cff;
+  --color_bg_secondary: #212d40ff;
+  --color_bg_tertiary: #364156ff;
+  --color_action: #ffd60aff;
+  --color_action_light: #ffeb99ff;
+  --color_action_dark: #ffc300ff;
+
+  --color_text_light: #f1f3f5ff;
+  --color_text_dark: #212529ff;
+
+  --color_text_bg_light: #f1f3f5ff;
+  --color_text_bg_dark: #212529ff;
+
+  /* https://coolors.co/palette/0b132b-1c2541-3a506b-5bc0be-6fffe9
+--oxford-blue: #0b132bff;
+--space-cadet: #1c2541ff;
+--yinmn-blue: #3a506bff;
+--verdigris: #5bc0beff;
+--fluorescent-cyan: #6fffe9ff; 
+*/
+
+  /* https://coolors.co/palette/11151c-212d40-364156-7d4e57-d66853
+--rich-black: #11151cff;
+--prussian-blue: #212d40ff;
+--charcoal: #364156ff;
+--rose-taupe: #7d4e57ff;
+--jasper: #d66853ff; 
+ */
 }
 
 html {
@@ -18,8 +46,8 @@ html {
 
 body {
   font-size: 1.6rem;
-  background-color: var(--main-body-color);
-  color: var(--page-sidebar-font-color);
+  background-color: var(--color_bg_tertiary);
+  color: var(--color_text_light);
 }
 
 code {
